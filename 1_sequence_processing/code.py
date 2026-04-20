@@ -134,8 +134,8 @@ def translate(fastafile: str) -> List[str]:
     return read_and_translate(fwd_rna) + read_and_translate(rev_rna)
 
 if __name__ == "__main__":
-    #filepath = "data/NT_113952.1.fasta"
-    filepath = "data/ATGCCGT.fasta"
+    filepath = "data/NT_113952.1.fasta"
+    #filepath = "data/ATGCCGT.fasta"
     #filepath = "data/NC_000012.fasta"
     # 課題 1-1
     print(base_count(filepath))
