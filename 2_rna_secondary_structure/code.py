@@ -10,6 +10,16 @@ def supplement_RNA_base(base:str)->str:
     mapping = {"A": "U", "U": "A", "G": "C", "C": "G"}
     return mapping.get(base.upper(), "")
 
+def swap_T_and_U(seq:str)->str:
+    if "T" in seq and "U" not in seq:
+        return seq.replace("T", "U")
+    elif "U" in seq and "T" not in seq:
+        return seq.replace("U", "T")
+    else:
+        return seq
+
+
+
 # fastaの配列は1つと仮定
 def enumerate_pairs(fastafile: str) -> List[Tuple[int, int]]:
     # 課題 2-1
@@ -19,7 +29,7 @@ def enumerate_pairs(fastafile: str) -> List[Tuple[int, int]]:
         record = SeqIO.read(f, "fasta")
         # id = record.id
         # description = record.description
-        seq = record.seq
+        seq = swap_T_and_U(record.seq)
 
         for i in range(len(seq)-1):
             supplement = supplement_RNA_base(seq[i])
@@ -36,7 +46,9 @@ def enumerate_possible_pairs(fastafile: str, min_distance: int=4) -> List[Tuple[
 
 def enumerate_continuous_pairs(fastafile: str, min_distance: int=4, min_length: int=2) -> List[Tuple[int, int, int]]:
     # 課題 2-3
-    possible_pairs = enumerate_possible_pairs(fastafile, min_distance)
+    # listのin判定は線形探索で重いから適当に使うとネックになる→setにするとハッシュテーブルを作ってくれる
+    # possible_pairs = enumerate_possible_pairs(fastafile, min_distance)
+    possible_pairs = set(enumerate_pairs(fastafile))
     result = []
     for tp in possible_pairs:
         stem_domain = [tp]
@@ -59,7 +71,7 @@ def create_dotbracket_notation(fastafile: str, min_distance: int=4, min_length: 
     result = list("." * len_seq) # 文字列はイミュータブルで置換できないのでリストに
 
     for tp in continuous_pairs:
-        for i in range(len_seq):
+        for i in range(len_seq): # ここのforは絶対もっと効率化できる
             if tp[0] <= (i+1) < tp[0]+tp[2] and result[i] == ".":
                 result[i] = "("
             elif tp[1]-tp[2] < (i+1) <= tp[1] and result[i] == ".":
@@ -68,6 +80,7 @@ def create_dotbracket_notation(fastafile: str, min_distance: int=4, min_length: 
 
 if __name__ == "__main__":
     filepath = "data/AUCGCCAU.fasta"
+    filepath = "data/NM_014495.4.fasta"
     # 課題 2-1
     print(enumerate_pairs(filepath))
     # 課題 2-2
