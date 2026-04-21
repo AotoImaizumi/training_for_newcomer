@@ -79,7 +79,7 @@
       <updated>1776314541504</updated>
       <workItem from="1776314542690" duration="2664000" />
       <workItem from="1776317491350" duration="26852000" />
-      <workItem from="1776742853610" duration="5660000" />
+      <workItem from="1776742853610" duration="8369000" />
     </task>
     <task id="LOCAL-00001" summary="1-1 implemented">
       <option name="closed" value="true" />
@@ -129,7 +129,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/training_for_newcomer$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1776412938744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing/data" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$test.coverage" NAME="test Coverage Results" MODIFIED="1776408442867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/PyCharmMiscProject" />
-    <SUITE FILE_PATH="coverage/training_for_newcomer$code.coverage" NAME="code Coverage Results" MODIFIED="1776754932718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_rna_secondary_structure" />
+    <SUITE FILE_PATH="coverage/training_for_newcomer$code.coverage" NAME="code Coverage Results" MODIFIED="1776757672400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_rna_secondary_structure" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$test_code.coverage" NAME="test_code Coverage Results" MODIFIED="1776317888311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$version_check.coverage" NAME="version_check Coverage Results" MODIFIED="1776408427951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing/data" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$code_tr2.coverage" NAME="code_tr2 Coverage Results" MODIFIED="1776667358431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_rna_secondary_structure" />
