@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a14ba91-d705-41d7-b40d-46549523bd10" name="Changes" comment="1-1 implemented">
+    <list default="true" id="3a14ba91-d705-41d7-b40d-46549523bd10" name="Changes" comment="output_training1.txt added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_sequence_processing/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/1_sequence_processing/code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_rna_secondary_structure/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_rna_secondary_structure/code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +36,14 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.code.executor&quot;: &quot;Run&quot;,
+    &quot;Python.code_tr2.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;Python.test_code.executor&quot;: &quot;Run&quot;,
     &quot;Python.tmp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ver.executor&quot;: &quot;Run&quot;,
     &quot;Python.version_check.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
@@ -51,62 +54,14 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.code">
-    <configuration name="code" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="training_for_newcomer" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11 (PyCharmMiscProject)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1_sequence_processing" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1_sequence_processing/code.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="training_for_newcomer" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11 (PyCharmMiscProject)" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PyCharmMiscProject" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PyCharmMiscProject/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -123,7 +78,8 @@
       <option name="presentableId" value="Default" />
       <updated>1776314541504</updated>
       <workItem from="1776314542690" duration="2664000" />
-      <workItem from="1776317491350" duration="23566000" />
+      <workItem from="1776317491350" duration="26852000" />
+      <workItem from="1776742853610" duration="5660000" />
     </task>
     <task id="LOCAL-00001" summary="1-1 implemented">
       <option name="closed" value="true" />
@@ -141,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776316281864</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="output_training1.txt added">
+      <option name="closed" value="true" />
+      <created>1776666799647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776666799647</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +113,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1-1 implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="1-1 implemented" />
+    <MESSAGE value="output_training1.txt added" />
+    <option name="LAST_COMMIT_MESSAGE" value="output_training1.txt added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -164,8 +129,10 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/training_for_newcomer$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1776412938744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing/data" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$test.coverage" NAME="test Coverage Results" MODIFIED="1776408442867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/PyCharmMiscProject" />
-    <SUITE FILE_PATH="coverage/training_for_newcomer$code.coverage" NAME="code Coverage Results" MODIFIED="1776666293110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing" />
+    <SUITE FILE_PATH="coverage/training_for_newcomer$code.coverage" NAME="code Coverage Results" MODIFIED="1776754932718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_rna_secondary_structure" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$test_code.coverage" NAME="test_code Coverage Results" MODIFIED="1776317888311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$version_check.coverage" NAME="version_check Coverage Results" MODIFIED="1776408427951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing/data" />
+    <SUITE FILE_PATH="coverage/training_for_newcomer$code_tr2.coverage" NAME="code_tr2 Coverage Results" MODIFIED="1776667358431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_rna_secondary_structure" />
+    <SUITE FILE_PATH="coverage/training_for_newcomer$ver.coverage" NAME="ver Coverage Results" MODIFIED="1776668526236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

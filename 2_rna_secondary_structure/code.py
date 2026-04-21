@@ -30,13 +30,25 @@ def enumerate_pairs(fastafile: str) -> List[Tuple[int, int]]:
 def enumerate_possible_pairs(fastafile: str, min_distance: int=4) -> List[Tuple[int, int]]:
     # 課題 2-2
     # 間に4塩基以上挟まっているという認識でいいのか？
-    return [tp for tp in enumerate_pairs(fastafile) if tp[1]-tp[0]>4]
+    return [tp for tp in enumerate_pairs(fastafile) if tp[1]-tp[0]>min_distance]
 
 
 def enumerate_continuous_pairs(fastafile: str, min_distance: int=4, min_length: int=2) -> List[Tuple[int, int, int]]:
     # 課題 2-3
-    enumerate_possible_pairs(fastafile, min_distance)
-    return []
+    possible_pairs = enumerate_possible_pairs(fastafile, min_distance)
+    result = []
+    for tp in possible_pairs:
+        stem_domain = [tp]
+        while True:
+            next_tp = (tp[0]+1, tp[1]-1)
+            if  next_tp in possible_pairs:
+                stem_domain.append(next_tp)
+                tp = next_tp
+            else:
+                break
+        if len(stem_domain) >= min_length:
+            result.append((stem_domain[0][0], stem_domain[0][1], len(stem_domain)))
+    return result
 
 def create_dotbracket_notation(fastafile: str, min_distance: int=4, min_length: int=2) -> str:
     # 課題 2-4
@@ -45,11 +57,14 @@ def create_dotbracket_notation(fastafile: str, min_distance: int=4, min_length: 
 if __name__ == "__main__":
     filepath = "data/AUCGCCAU.fasta"
     # 課題 2-1
+    print("2-1")
     print(enumerate_pairs(filepath))
     # 課題 2-2
+    print("2-2")
     print(enumerate_possible_pairs(filepath))
     # 課題 2-3
-    print(enumerate_continuous_pairs(filepath, 2))
+    print("2-3")
+    print(enumerate_continuous_pairs(filepath, 4,2))
     # 課題 2-4
     print(create_dotbracket_notation(filepath, 2))
 
