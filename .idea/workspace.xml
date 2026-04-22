@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a14ba91-d705-41d7-b40d-46549523bd10" name="Changes" comment="output_training1.txt added">
-      <change afterPath="$PROJECT_DIR$/output_training2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2_rna_secondary_structure/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/2_rna_secondary_structure/code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_rna_secondary_structure/data/AUCGCCAU.fasta" beforeDir="false" afterPath="$PROJECT_DIR$/2_rna_secondary_structure/data/AUCGCCAU.fasta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_protein_tertiary_structure/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/3_protein_tertiary_structure/code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_training2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output_training2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <updated>1776314541504</updated>
       <workItem from="1776314542690" duration="2664000" />
       <workItem from="1776317491350" duration="26852000" />
-      <workItem from="1776742853610" duration="13962000" />
+      <workItem from="1776742853610" duration="28754000" />
     </task>
     <task id="LOCAL-00001" summary="1-1 implemented">
       <option name="closed" value="true" />
@@ -131,7 +131,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/training_for_newcomer$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1776412938744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing/data" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$test.coverage" NAME="test Coverage Results" MODIFIED="1776408442867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/PyCharmMiscProject" />
-    <SUITE FILE_PATH="coverage/training_for_newcomer$code.coverage" NAME="code Coverage Results" MODIFIED="1776787210878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_rna_secondary_structure" />
+    <SUITE FILE_PATH="coverage/training_for_newcomer$code.coverage" NAME="code Coverage Results" MODIFIED="1776791742585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_rna_secondary_structure" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$test_code.coverage" NAME="test_code Coverage Results" MODIFIED="1776317888311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$version_check.coverage" NAME="version_check Coverage Results" MODIFIED="1776408427951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/1_sequence_processing/data" />
     <SUITE FILE_PATH="coverage/training_for_newcomer$code_tr2.coverage" NAME="code_tr2 Coverage Results" MODIFIED="1776667358431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2_rna_secondary_structure" />

@@ -71,25 +71,33 @@ def create_dotbracket_notation(fastafile: str, min_distance: int=4, min_length: 
     result = list("." * len_seq) # 文字列はイミュータブルで置換できないのでリストに
 
     for tp in continuous_pairs:
-        for i in range(len_seq): # ここのforは絶対もっと効率化できる
-            if tp[0] <= (i+1) < tp[0]+tp[2] and result[i] == ".":
-                result[i] = "("
-            elif tp[1]-tp[2] < (i+1) <= tp[1] and result[i] == ".":
-                result[i] = ")"
+        # ステム領域の重複に対応できていない
+        for i in range(tp[0]-1, tp[0]+tp[2]-1):
+            result[i] = "("
+        for j in range(tp[1]-tp[2], tp[1]):
+            result[j] = ")"
     return "".join(result)
 
 if __name__ == "__main__":
-    filepath = "data/AUCGCCAU.fasta"
+    #filepath = "data/AUCGCCAU.fasta"
     filepath = "data/NM_014495.4.fasta"
     # 課題 2-1
+    print("2-1")
     print(enumerate_pairs(filepath))
     # 課題 2-2
+    print("2-2")
     print(enumerate_possible_pairs(filepath))
     # 課題 2-3
-    print(enumerate_continuous_pairs(filepath, 4,2))
+    print("2-3")
+    print(enumerate_continuous_pairs(filepath, 4, 2))
     # 課題 2-4
-    print(create_dotbracket_notation(filepath, 4,2))
+    print("2-4")
+    print(create_dotbracket_notation(filepath, 4, 2))
+    #2-5
+    """
+    問題:ステム構造の候補となる領域の組み合わせが膨大で絞りきれない
+    回避、改善:構造に制約をつけて候補を絞る
+    """
 
 
-# 実際の実装では呼び出しがネストしてると重くて動かないっぽい
 

@@ -2,20 +2,25 @@ from typing import List, Union
 import numpy.typing as npt
 import numpy as np
 
-def calc_chain_center(pdbfile: str, chain: str) -> Union[npt.NDArray[np.float_], List[float]]:
-    # 課題 3-2
-    return np.zeros(3)
+# 3-1
+"""
+ pdb形式からmmCIFへの移行が進んでいる、とりあえずpdb形式でやる
+"""
 
-def calc_residue_center(pdbfile: str, chain: str, resname: str) -> Union[npt.NDArray[np.float_], List[float]]:
+def calc_chain_center(pdbfile: str, chain: str) -> Union[npt.NDArray[np.float_], List[float]]:
     # 課題 3-3
     return np.zeros(3)
 
-def calc_min_distance(pdbfile: str, chain: str, resname: str) -> float:
+def calc_residue_center(pdbfile: str, chain: str, resname: str) -> Union[npt.NDArray[np.float_], List[float]]:
     # 課題 3-4
+    return np.zeros(3)
+
+def calc_min_distance(pdbfile: str, chain: str, resname: str) -> float:
+    # 課題 3-5
     return 0.0
 
 
-
+# 1通りやりました
 if __name__ == "__main__":
     filepath = "data/1buw.pdb"
     chain = "A"
