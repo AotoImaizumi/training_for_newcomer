@@ -2,18 +2,33 @@ from typing import List, Union
 import numpy.typing as npt
 import numpy as np
 import pandas as pd
+from rdkit import Chem
+from rdkit.Chem import Draw
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
-def draw_molecule(csvfile: str) -> None:
-    # 課題 4-1
-    pass
+#4-0
+"""
+細胞膜が特定の物質をどれだけ透過させやすいかという指標
+創薬の観点での役割；物質を細胞内に効率的に浸透させたい
+experimentalに調べるには時間とコストがかかりすぎるので、スクリーニングしたい
+中分子は大きさ的に膜を通りにくいため最適な構造を事前に調べて効率化したい
+"""
 
-def create_2d_descriptors(smiles: str) -> Union[npt.NDArray[np.float_], List[float]]:
+def draw_molecule(csvfile: str, molecule:str) -> None:
+    # 課題 4-1
+    # RDKitで描画可
+    df = pd.read_csv(csvfile)
+    smiles = df.query("`Compound ID` == @molecule")['SMILES'].item()
+    mol = Chem.MolFromSmiles(smiles)
+    Draw.MolToFile(mol, filename=f"{molecule}.svg")
+    return
+
+def create_2d_descriptors(smiles: str) -> Union[npt.NDArray[np.float64], List[float]]:
     # 課題 4-2
     return []
 
-def predict_logpapp(csvfile: str) -> Union[npt.NDArray[np.float_], pd.Series, List[float]]:
+def predict_logpapp(csvfile: str) -> Union[npt.NDArray[np.float64], pd.Series, List[float]]:
     # 課題 4-3
     np.random.seed(0) # 出力を固定するためにseedを指定
     rfr = RandomForestRegressor(random_state=0) # 出力を固定するためにrandom_stateを指定
@@ -35,7 +50,7 @@ if __name__ == "__main__":
     smiles = "C(=O)(c1ccc(OCCCCCC)cc1)CCNc1cc(Cl)ccc1"
     filepath = "data/fukunishi_data.csv"
     # 課題 4-1
-    draw_molecule(filepath)
+    draw_molecule(filepath, "CHEMBL540227")
     # 課題 4-2
     print(create_2d_descriptors(smiles))
     # 課題 4-3
